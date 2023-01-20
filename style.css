@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vh;
+  height: 100wh;
+  cursor: none;
+}
+
+#pointer {
+  position: absolute;
+  opacity: 0.8;
+  width: 50px;
+  /* transform: translate(-50%, -50%); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 99;
+  width: 20px;
+  height: 20px;
+  background-color: greenyellow;
+  border: 4px black solid;
+  border-radius: 2px 50% 50% 50%;
+  pointer-events: none;
+}
+
+#info {
+	position: absolute;
+	top: 220%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+	z-index: 100;
+	display:block;
+  color: greenyellow;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: sans-serif;
+  pointer-events: none;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
