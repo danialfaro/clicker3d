@@ -1,3 +1,7 @@
+:root {
+  --playerColor: #8cff20;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,7 +12,16 @@ html, body {
   width: 100vh;
   height: 100wh;
   cursor: none;
+  font-family: sans-serif;
 }
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* pointer */
 
 #pointer {
   position: absolute;
@@ -22,30 +35,77 @@ html, body {
   z-index: 99;
   width: 20px;
   height: 20px;
-  background-color: greenyellow;
+  background-color: var(--playerColor);
   border: 4px black solid;
   border-radius: 2px 50% 50% 50%;
   pointer-events: none;
 }
 
-#info {
+#pointer-info {
 	position: absolute;
-	top: 220%;
+	top: 240%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 	z-index: 100;
 	display:block;
-  color: greenyellow;
+  color: var(--playerColor);
   font-size: 16px;
-  font-weight: bold;
-  font-family: sans-serif;
+  font-weight: bold;  
   pointer-events: none;
+  background: linear-gradient(rgba(0,0,0,0.3), transparent);
+  padding: 4px;
+  border-radius: 20% 20% 0 0;
 }
 
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
+/* menu */
+
+#menu {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.4);
+  z-index: 99;
+}
+
+#color-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 4px;
+}
+
+#color-list .color-item {
+  list-style: none;
+  border: 2px solid black;
+  width: 100%;
+  height: 25px;
+  background-color: white;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+#color-list .color-item:hover {
+  height: 50px;
+  opacity: 1;
+}
+
+#color-list .color-item.green {
+  background-color: var(--playerColor);
+}
+
+#color-list .color-item.pink {
+  background-color: palevioletred;
+}
+
+#color-list .color-item.blue {
+  background-color: skyblue;
+}
+
+#color-list .color-item.active {
+  opacity: 1;
 }
 

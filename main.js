@@ -6,7 +6,7 @@ import * as TWEEN from 'tween.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { OutlineEffect } from 'three/addons/effects/OutlineEffect.js';
 
-const info = document.querySelector('#info');
+const info = document.querySelector('#pointer-info');
 var coins = 0;
 
 
@@ -48,8 +48,6 @@ scene.add(ambientLight)
 // const lightHelper = new THREE.PointLightHelper(pointLight);
 // const gridHelper = new THREE.GridHelper(200, 50);
 // scene.add(lightHelper, gridHelper)
-
-
 
 function createStar() {
   const randomRadius = THREE.MathUtils.randFloat(1, 3)
