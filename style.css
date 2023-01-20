@@ -9,8 +9,8 @@
 }
 
 html, body {
-  width: 100vh;
-  height: 100wh;
+  width: 100%;
+  height: 100%;
   cursor: none;
   font-family: sans-serif;
 }
