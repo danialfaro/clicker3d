@@ -1,6 +1,6 @@
 # 🎮 3D clicker like con Three.js
 
-Este pequeño proyecto ofrece un escenario interactivo en tres dimensiones donde los usuarios pueden interactuar mediante clics para rotar la cámara. Al pasar el ratón por encima de esferas amarillas, el jugador acumula puntos, con la posibilidad aleatoria de obtener puntos extra.
+Este pequeño proyecto realizado ofrece un escenario interactivo en tres dimensiones donde los usuarios pueden interactuar mediante clics para rotar la cámara. Al pasar el ratón por encima de esferas amarillas, el jugador acumula puntos, con la posibilidad aleatoria de obtener puntos extra. Proyecto personal para aprender a utilizar la libreria three.js.
 
 
 ![Game](images/screenshoot.png)
